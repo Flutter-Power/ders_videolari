@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '101/color_learn.dart';
-import '202/services/service_post_learn_view.dart';
+import '202/services/service_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,6 +42,6 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light, // saatlerin olduğu kısım
           ),
         ),
-        home: const ServicePostLearn());
+        home: const ServiceLearn());
   }
 }

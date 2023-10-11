@@ -36,36 +36,30 @@ class CustomWidgetLearn extends StatelessWidget {
   }
 }
 
-class _PaddingUtilty {
+mixin class _PaddingUtilty {
   final EdgeInsets normalPadding = const EdgeInsets.all(8);
   final EdgeInsets normal2XPadding = const EdgeInsets.all(16);
 }
 
-class _ColorsUtility {
+mixin class _ColorsUtility {
   final Color redColor = const Color.fromARGB(255, 184, 32, 21);
   final Color whiteColor = const Color.fromARGB(255, 233, 228, 228);
 }
 
-class CustomWFootButton extends StatelessWidget
-    with _ColorsUtility, _PaddingUtilty {
+class CustomWFootButton extends StatelessWidget with _ColorsUtility, _PaddingUtilty {
   CustomWFootButton({super.key, required this.title, required this.onPressed});
   final String title;
   final void Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-          backgroundColor: _ColorsUtility().redColor,
-          shape: const StadiumBorder()),
+      style: ElevatedButton.styleFrom(backgroundColor: _ColorsUtility().redColor, shape: const StadiumBorder()),
       onPressed: onPressed,
       child: Padding(
         padding: normalPadding,
         child: Text(
           title,
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              ?.copyWith(color: whiteColor, fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(color: whiteColor, fontWeight: FontWeight.bold),
         ),
       ),
     );

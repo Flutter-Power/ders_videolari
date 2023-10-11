@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
-import '101/color_learn.dart';
-import '202/services/service_learn_view.dart';
+import 'package:youtube1/202/package_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +22,6 @@ class MyApp extends StatelessWidget {
           ),
           progressIndicatorTheme: const ProgressIndicatorThemeData(color: Color.fromARGB(255, 231, 220, 220)),
           listTileTheme: const ListTileThemeData(contentPadding: EdgeInsets.zero),
-          errorColor: ColorsItems.harleQuin,
           textSelectionTheme: const TextSelectionThemeData(selectionColor: Colors.cyan, cursorColor: Colors.amber, selectionHandleColor: Colors.yellow),
           inputDecorationTheme: const InputDecorationTheme(
             border: OutlineInputBorder(),
@@ -42,6 +39,6 @@ class MyApp extends StatelessWidget {
             systemOverlayStyle: SystemUiOverlayStyle.light, // saatlerin olduğu kısım
           ),
         ),
-        home: const ServiceLearn());
+        home: const PackageLearnView());
   }
 }

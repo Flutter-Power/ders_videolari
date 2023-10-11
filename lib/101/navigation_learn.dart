@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:youtube1/101/image_learn.dart';
 
 import 'navigete_detail_learn.dart';
 
@@ -26,8 +25,7 @@ class _NavigationLearnState extends State<NavigationLearn> with NavigatorMenager
       body: ListView.builder(itemBuilder: ((context, index) {
         return TextButton(
           onPressed: () async {
-            final response = await navigateToWidgetNormal<bool>(
-                context, NavigationLearnDetail(isOkey: selectedItems.contains(index)));
+            final response = await navigateToWidgetNormal<bool>(context, NavigationLearnDetail(isOkey: selectedItems.contains(index)));
             if (response is bool) {
               addSelectedItems(index, response);
             }

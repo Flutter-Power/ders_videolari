@@ -35,7 +35,7 @@ class NotDemosView extends StatelessWidget {
                     child: Center(
                         child: Text(
                       buttonTextElevation,
-                      style: Theme.of(context).textTheme.headline4,
+                      style: Theme.of(context).textTheme.headlineMedium,
                     )))),
             TextButton(onPressed: () {}, child: Text(buttonTextText)),
             const SizedBox(
@@ -55,7 +55,7 @@ class SubtitleWidget extends StatelessWidget {
     return Text(
       subtitlle,
       textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.subtitle1?.copyWith(color: Colors.black, fontWeight: FontWeight.w400),
+      style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.black, fontWeight: FontWeight.w400),
     );
   }
 }
@@ -72,7 +72,7 @@ class TitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.black, fontWeight: FontWeight.w700),
+      style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.black, fontWeight: FontWeight.w700),
     );
   }
 }

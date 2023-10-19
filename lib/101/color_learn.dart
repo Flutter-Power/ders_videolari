@@ -15,13 +15,13 @@ class ColorLearnView extends StatelessWidget {
               "Yakoo",
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1
-                  ?.copyWith(color: Theme.of(context).errorColor),
+                  .titleMedium
+                  ?.copyWith(color: Theme.of(context).colorScheme.error),
             ),
           ),
           Container(
             color: ColorsItems.renkli,
-            child: Text("Zeynoo"),
+            child: const Text("Zeynoo"),
           ),
         ],
       ),

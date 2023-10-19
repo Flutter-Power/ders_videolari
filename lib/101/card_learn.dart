@@ -47,7 +47,7 @@ class ProjectMargins {
 }
 
 class _CustomCard extends StatelessWidget {
-  const _CustomCard({super.key, required this.child});
+  const _CustomCard({required this.child});
   final Widget child;
 
   @override
@@ -55,8 +55,8 @@ class _CustomCard extends StatelessWidget {
     final borderRadius2 = BorderRadius.circular(10);
     return Card(
       margin: ProjectMargins.cardMargin,
-      child: child,
       shape: RoundedRectangleBorder(borderRadius: borderRadius2),
+      child: child,
     );
   }
 }

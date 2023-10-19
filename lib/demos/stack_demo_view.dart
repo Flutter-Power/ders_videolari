@@ -44,7 +44,7 @@ class CardCustom extends StatelessWidget {
       child: Text(
         "Yakup",
         textAlign: TextAlign.center,
-        style: Theme.of(context).textTheme.headline4?.copyWith(
+        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
               color: Colors.red,
               fontStyle: FontStyle.italic,
               fontWeight: FontWeight.w700,

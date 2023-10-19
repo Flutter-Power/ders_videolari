@@ -41,7 +41,7 @@ class TextLearnView extends StatelessWidget {
               textAlign: TextAlign.right,
               style: Theme.of(context)
                   .textTheme
-                  .headline5
+                  .headlineSmall
                   ?.copyWith(color: Colors.green)),
           Text(userName ?? ""),
           Text(keys.welcome)

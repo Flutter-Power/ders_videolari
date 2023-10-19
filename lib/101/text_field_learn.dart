@@ -19,7 +19,7 @@ class _TextFieldLearnState extends State<TextFieldLearn> {
             buildCounter: (context, {int? currentLength, bool? isFocused, int? maxLength}) {
               return _animatedContainer(currentLength);
             },
-            style: TextStyle(color: Colors.red),
+            style: const TextStyle(color: Colors.red),
             keyboardType: TextInputType.emailAddress, // klavyeye @ sembolü ekler
             autofillHints: const [AutofillHints.email],
             maxLength: 20,

@@ -19,7 +19,7 @@ class IconLeanView extends StatelessWidget {
               icon: Icon(
                 Icons.message_outlined,
                 color: Theme.of(context)
-                    .backgroundColor, // themadan alırsak tema rengine göre renk değişir sabit kalmaz
+                    .colorScheme.background, // themadan alırsak tema rengine göre renk değişir sabit kalmaz
                 size: 40,
               )),
           IconButton(

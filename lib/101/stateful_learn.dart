@@ -36,7 +36,7 @@ class _StatefulLeaenState extends State<StatefulLeaen> {
           Center(
               child: Text(
             _countValue.toString(),
-            style: Theme.of(context).textTheme.headline2,
+            style: Theme.of(context).textTheme.displayMedium,
           )),
           const Placeholder(),
           const CounterHelloButton()

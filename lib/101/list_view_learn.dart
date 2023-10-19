@@ -19,7 +19,7 @@ class _ListViewLearnState extends State<ListViewLearn> {
             // yazıyı satıra sıkıştırır
             child: Text(
               "Bm Köles",
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               maxLines: 1,
             ),
           ),
@@ -54,7 +54,7 @@ class _ListViewLearnState extends State<ListViewLearn> {
             // yazıyı satıra sıkıştırır
             child: Text(
               "Bm Köles",
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
               maxLines: 1,
             ),
           ),
